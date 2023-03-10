@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 480px) {
     p.imgdesc{
-        display: block;
+        display:inline-block;
     }
 
     main img {
