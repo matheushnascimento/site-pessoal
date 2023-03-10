@@ -6,6 +6,19 @@
     p.imgdesc{
         display: block;
     }
+
+    main img {
+        width: 50%;
+        display: inline-block;
+    }
+    
+    main img.pequena {
+        margin: auto;
+        display: inline-block;
+        max-width: 150px;
+        box-align: left;
+        padding: 10px;
+    }
 }
 @media screen and (min-width: 481px)and (max-width: 768px) {
 
