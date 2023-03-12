@@ -3,32 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Open+Sans:wght@300&display=swap');
 
 @media screen and (max-width: 480px) {
-    p.imgdesc{
-        display:inline-block;
+    .container {
+        color: white;
+        display: block;
     }
 
-    main img {
-        width: 50%;
-        display: inline-block;
+}
+
+@media screen and (min-width: 481px)and (max-width: 768px) {
+    .container {
+        display: block;
+
     }
-    
-    main img.pequena {
+
+    .container>img {
+        display: block;
         margin: auto;
-        display: inline-block;
-        max-width: 150px;
-        box-align: left;
         padding: 10px;
     }
-}
-@media screen and (min-width: 481px)and (max-width: 768px) {
-
-}
-@media screen and (min-width: 769px) and (max-width: 7024px) {
-
-}
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-
-}
-@media screen and (max-width: 1201px)  {
-
 }
