@@ -21,7 +21,7 @@
 
 body {
     font-size: 1em;
-    background-image:linear-gradient(var(--cor0), var(--cor1)) ;
+    background-image: linear-gradient(var(--cor0), var(--cor1));
     font-family: var(--fonte-padrao);
 }
 
@@ -58,15 +58,8 @@ main {
     border-bottom-right-radius: 20px;
 }
 
-main.home {
+main.fullh {
     height: 100vh;
-}
-
-
-main strong {
-    color: var(--cor4);
-    font-weight: bold;
-    padding: 2px 6px;
 }
 
 main a {
@@ -133,6 +126,23 @@ section>h3>a {
     padding: 10px;
 }
 
+.parallax {
+    color: white;
+    padding: 50px;
+    /* The image used */
+    background-image: url("../img/redes.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 ul {
     padding: 10px;
     border-radius: 10px;
@@ -146,4 +156,19 @@ ul>li>p>a {
     background-image: linear-gradient(to right, var(--cor2), transparent);
     color: var(--cor0);
     display: flex;
+}
+
+.social {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social:hover {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, border 0.1s;
 }
