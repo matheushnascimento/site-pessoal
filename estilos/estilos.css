@@ -21,7 +21,7 @@
 
 body {
     font-size: 1em;
-    background-color: var(--cor0);
+    background-image:linear-gradient(var(--cor0), var(--cor1)) ;
     font-family: var(--fonte-padrao);
 }
 
@@ -47,39 +47,21 @@ nav>a:hover {
 }
 
 main {
+    background-color: var(--cor2);
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-h1 {
-    font-size: 2em;
-    color: var(--cor5);
-    font-family: var(--fonte-titulo);
+main.home {
+    height: 100vh;
 }
 
-h2 {
-    font-size: 1.5em;
-    text-indent: 8px;
-    color: var(--cor4);
-    font-weight: normal;
-    font-family: var(--fonte-destaque);
-}
-
-p {
-    font-size: 1em;
-    margin: 15px 0px;
-    text-indent: 15px;
-    line-height: 1.5em;
-    text-align: justify;
-    font-family: var(--fonte-padrao);
-}
 
 main strong {
     color: var(--cor4);
@@ -98,13 +80,37 @@ main a:hover {
     text-decoration: underline;
 }
 
-aside {
+h1 {
+    font-size: 2em;
+    color: var(--cor5);
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-indent: 8px;
+    color: var(--cor2);
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+}
+
+p {
+    font-size: 1em;
+    margin: 15px 0px;
+    text-indent: 15px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+}
+
+section {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--cor0);
 }
 
-aside>h3 {
+section>h3 {
     background-color: var(--cor1);
     color: white;
     padding: 10px;
@@ -112,7 +118,7 @@ aside>h3 {
     border-radius: 10px 10px 0px 0px;
 }
 
-aside>h3>a {
+section>h3>a {
     color: white;
 }
 
@@ -130,7 +136,6 @@ aside>h3>a {
 ul {
     padding: 10px;
     border-radius: 10px;
-    background-color: var(--cor1);
 }
 
 li {
